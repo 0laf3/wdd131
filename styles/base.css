@@ -5,8 +5,8 @@ body, h1, h2, h3, p, ul {
 }
 
 header, footer, .card h2 {
-  background-color: #001F3F;
-  color: #FFFFFF;
+  background-color: #ACE1AF;
+  color: #E0FBE2;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
@@ -23,7 +23,7 @@ nav ul {
   display: flex;
   justify-content: space-around;
   padding: 10px 0;
-  background-color: #000000;
+  background-color: #B0EBB4;
   border-radius: 10px;
 }
 
@@ -114,7 +114,7 @@ main {
   border: 1px solid #ccc;
   padding: 20px;
   margin: 20px;
-  background-color: #b4bfce;
+  background-color: #BFF6C3;
   color: #001F3F;
   text-align: center;
   border-radius: 10px;
