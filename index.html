@@ -1,48 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Sebastião Capindissa | WDD 131</title>
-    <meta name="description" content=" WDD 131 - Dynamic Web Fundamentals, João Sebastião Capindissa ">
-    <meta name="author" content="João Sebastião Capindissa">
+    <title>WDD 131 - Dynamic Web Fundamentals - João Sebastião Capindissa</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals -- Zachariah Sutherland -- Learning about HTML, CSS, Javascript for web development.">
+    <meta name="author" content="Zachariah Sutherland">
+    <script src="scripts/getdates.js" defer></script>
     <link rel="stylesheet" href="styles/base.css">
-</head>
-
+    
 <body>
-    <div class="container">
-        <header>
-            <h1>WDD 131: Dynamic Web Fundamentals - João Sebastião Capindissa</h1>
-            <div class="nav">
-                <nav>
-                    <ul>
-                        <li><a href="www.linkedin.com/in/joaocapindissa">LinkedIn</a></li>
-                        <li><a href="https://byui.instructure.com/">I-learning</a></li>
-                        <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
-                        <li><a href="#">final Project</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main class="main">
-            <div class="content">
-                <h2>About Me</h2>
-                <!-- Main content goes here -->
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam beatae dolorem ipsa, vel quidem
-                    facilis expedita consectetur sint at quasi officiis nulla. Corrupti quo sint dolorum perspiciatis
-                    animi eligendi non.</p>
-            </div>
-            <div class="sidebar">
-                <h2>Web Dev Resources </h2>
-                <!-- Right sidebar content goes here -->
-            </div>
-        </main>
-        <footer>
-            <p> 2024 | João Sebastião Capindissa | Angola</p>
-            <p>Last Modification 04/24/2024</p>
-        </footer>
-    </div>
-</body>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - João Sebastião Capindissa</h1>
 
+        <nav>
+            <ul class="navbar">
+                <li><a href="https://www.linkedin.com/in/joaocapindissa/">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/20?lang=eng">Favorite Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+
+            <div class="top-half">
+                <p><br><br><br>My name is João Sebastião Capindissa. a curious traveler with a love for exploration and learning. Originally from Angola, I currently reside in the lively city of Luanda, where the rich culture and dynamic atmosphere fuel my sense of adventure..<br><br><br></p>
+                <img src="images/me.jpg" alt="Me" id="me">
+            </div>
+
+            <h3><u><strong>&emsp;&emsp;Angola&emsp;&emsp;</strong></u></h3><br>
+
+            <div class="bottom-half">
+                <img src="images/angola.jpg" alt="Angola Flag" id="ct">
+                <p><br><br><br>Angola, located on the west coast of Southern Africa, is a country rich in history, culture, and natural resources..<br><br><br></p>
+            </div>
+        </section>
+        
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://www.codechef.com/">CODE CHEF</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.freecodecamp.org/">freecodecamp</a></li>
+                <li><a href="https://www.theodinproject.com/">theodinproject</a></li>
+                <li><a href="https://www.jetbrains.com/academy/">jetbrains academy</a></li>
+                <li><a href="https://www.udemy.com/">Udemy</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> João Sebastião Capindissa - Angola, Luanda
+        </p>
+        <p id="lastModified" class="colored"></p>
+    </footer>
+
+    <script>
+
+    </script>
+</body>
 </html>

@@ -1,69 +1,214 @@
-/* Reset default margin and padding */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+/* General, Nav, Header, Footer */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+header, footer, .card h2 {
+  background-color: #001F3F;
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* Hover Effect -- criated by https://getdevdone.com/blog/our-favorite-navigation-menu-effects.html */
+nav ul{
+  margin:0;
+  padding:0;
+  display:flex;
+}
+
+nav ul li{
+  list-style:none;
+  margin:0 20px;
+  transition:0.5s;
+}
+
+nav ul li a{
+  display: block;
+  position:relative;
+  text-decoration:none;
+  padding:5px;
+  font-size:18px;
+  font-family: sans-serif;
+  color:#fff;
+  text-transform:uppercase;
+  transition:0.5s;
+}
+
+nav ul:hover li a{
+  transform:scale(1);
+  opacity:0.8;
+  filter:blur(8px);
+}
+
+nav ul li a:hover{
+  transform:scale(1.05);
+  opacity:1;
+  filter:blur(0);
+  text-decoration:none;
+  color:#fff;
+}
+
+nav ul li a:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#001F3F;
+  transition:0.5s;
+  transform-origin:right;
+  transform:scaleX(0);
+  z-index:-1;
+}
+
+nav ul li a:hover:before{
+  transition:transform 0.5s;
+  transform-origin:left;
+  transform:scaleX(1);
+  border-radius: 10px;
+}
+/* End Hover */
+
+/* Main */
+.colored {
+  color: #e6d2a8;
+}
+
+main {
+  max-width: 1800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  background-color: #b4bfce;
+  color: #001F3F;
+  text-align: center;
+  border-radius: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card h2 {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.card ul li{
+  color: #001F3F;
+}
+
+.card a{
+  text-decoration: none;
+  color: #001F3F;
+}
+  
+.card a:visited{
+  text-decoration: none;
+  color: #001F3F;
+}
+.card .top-half,
+.card .bottom-half {
+  margin-bottom: 20px;
+}
+
+.card:first-child {
+  flex: 2;
+}
+
+.card:nth-child(2) {
+  flex: 1;
+}
+
+#me,
+#ct {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
   
-  /* Define grid layout for body */
-  body {
-    display: grid;
-    grid-template-rows: auto 1fr auto; /* Header, Main content, Footer */
+  .card .top-half,
+  .card .bottom-half {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
   }
   
-  /* Container for flex layout */
-  .container {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  .card .top-half p {
+      flex: 1;
+      margin-right: 20px;
   }
   
-  /* Styling for header and footer */
-  header, footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+  .card .bottom-half p {
+      flex: 1;
   }
   
-  /* Styling for navigation */
-  nav {
-    background-color: #080808;
-    color: #fff;
-    padding: 10px;
+  .card h3 {
+      margin-top: 20px;
+      flex: 1;
   }
   
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  #me {
+      max-width: 20%;
   }
   
-  nav ul li {
-    margin-left: 10px;
-    padding-left: 15%;
-  }
-  .modern a{
-    flex: 1 1 100%;
+  #ct {
+      max-width: 25%;
   }
   
-  /* Main content layout */
-  .main {
-    flex: 1;
-    display: grid;
-    grid-template-columns: 1fr 20%; /* Content, Sidebar */
-    gap: 10px;
+  .card ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
   
-  /* Styling for sidebar */
-  .sidebar {
-    background-color: #eee;
-    padding: 10px;
+  .card ul li {
+      margin: 10px 0;
+      font-size: 1.2em;
   }
-  
-  /* Styling for main content */
-  .content {
-    padding: 10px;
-  }
-  
+}
