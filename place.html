@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Week 3 Country Page - Mallorca, Spain - João Sebastião Capindissa</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals -- Zachariah Sutherland -- Further learning about dynamic and adaptive HTML, CSS, Javascript for web development.">
+    <meta name="author" content="João Sebastião Capindissa">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <h1>Angola</h1>
+    </header>
+
+    <main>
+        <div id="hero">
+            <picture>
+                <source srcset="images/noticia-170518-8b.jpg" media="(min-width: 1000px)">
+                <source srcset="images/noticia-170518-8b.jpg" media="(min-width: 550px)">
+                <img src="images/noticia-170518-8b.jpg" alt="Mallorca, Spain">
+            </picture>
+        </div>
+
+        <div id="data">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 1.247M km²
+            <br><strong>Population:</strong> 35.59M
+            <br><strong>Capital:</strong> Luanda
+            <br><strong>Languages:</strong> Portugues
+            <br><strong>Currency:</strong> Kwanza
+            <br><strong>Time Zone:</strong> GMT+1
+            <br><strong>Calling Code:</strong> +244
+            <br><strong>Internet TLD:</strong> .ao
+            </p>
+        </div>
+
+        <div id="weather">
+            <h2 id="icon">Weather</h2>
+            <ul id="weatherStats"></ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> João Sebastião Capindissa - Luanda, Angola
+        </p>
+        <p id="lastModified" class="colored"></p>
+    </footer>
 </body>
 </html>
