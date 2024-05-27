@@ -1,0 +1,50 @@
+@media screen and (min-width: 640px) {
+    #temples{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 20px;
+    }
+    #menu {
+        display: none;
+    }
+    .navigation {
+        justify-content: center;
+        flex-direction: row;
+    }
+    .navigation a {
+        display: block;
+    }
+}
+@media screen and (min-width: 740px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 20px;
+    }
+    #menu{
+        display: none;
+    }
+    .navigation {
+        justify-content: center;
+        flex-direction: row;
+    }
+    .navigation a {
+        display: block;
+    }
+
+    #temples {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    figure img, figcaption {
+        grid-column: auto;
+    }
+
+}

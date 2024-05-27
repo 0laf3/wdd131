@@ -1,0 +1,137 @@
+:root {
+    --main-color: #FFF7FC;
+    --accent-color: #4c7784;
+    --white: #fff;
+    --black: #000;
+    --red: #a60202;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: "Sansita", sans-serif;
+}
+
+#menu {
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: var(--black);
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
+
+#menu::before {
+	content: "☰";
+    font-size: 40px;
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+main {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    padding-left: 10px;
+    font-size: 1.3rem;
+}
+
+.navigation a {
+    display: none;
+    color: var(--black);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.navigation a:hover {
+    color: var(--black);
+    text-decoration: underline;
+}
+
+.open a {
+    display: block;
+}
+
+header {
+    background-color: var(--main-color);
+    display: grid;
+    grid-gap: 3rem;
+    padding: 20px;
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 0 15px var(--accent-color);
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+
+#temples{
+    grid-gap: 25px;
+    padding: 25px;
+}
+
+/* Card */
+.card {
+    text-align: center;
+    background-color: var(--main-color);
+    position: relative;
+    box-shadow: 0px 3px 5px 0px var(--accent-color);
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid var(--accent-color);
+}
+
+.card h2 {
+    font-size: 1.4em;
+    color: var(--black);
+}
+
+.card p {
+    font-size: 0.8em;
+    color: var(--black);
+    font-family: sans-serif;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figcaption {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 20px;
+    border: 1px solid var(--accent-color);
+}

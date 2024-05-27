@@ -1,0 +1,10 @@
+04/02/2024
+CSE 121B
+Student : João Sebastião Capindissa
+
+W05 Application Project Idea / Proposal
+
+* Fetch random photos from Unsplash API
+https://api.unsplash.com/photos/random?count=14&client_id=rAieM468A0eC5ZC7ON_gzBw8FOYaLvG9fJNp7vausOk
+
+* Display photos in the album
