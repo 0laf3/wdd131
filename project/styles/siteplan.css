@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+    background-color: #692729;
+}
+
+h1, h2, h3, p, ul {
+    margin: 0 0 1em 0;
+}
+
+div {
+    border: 2px solid black;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #e6ddc3;
+    color: #001F3F;
+}
+
+h1, h2, h3 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+p, li {
+    font-family: 'Baloo Tammudu 2', sans-serif;
+}
+
+#purpose, #scenarios, #color, #fonts, #wireframes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#color {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+#color h2 {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#color section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    grid-row: 2;
+}
+
+#primary-color, #secondary-color, #accent-color, #background-color {
+    width: 200px;
+    height: 100px;
+    border: 2px solid #000;
+}
+
+#primary-color {
+    background-color: #F2CEBE;
+}
+
+#secondary-color {
+    background-color: #F2CEBE;
+}
+
+#accent-color {
+    background-color: #EAE4D6;
+}
+#background-color{
+    background-color: #692729;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+#BarlowSemiCondensed {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#BalooTammudu2 {
+    font-family: 'Baloo Tammudu 2', sans-serif;
+}
+
+footer {
+    background-color: #F2CEBE;
+    color: #692729;
+    width: 1200px;
+}
+
