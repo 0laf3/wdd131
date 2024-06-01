@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="WDD 131 Product Review Form by João Sebastião Capindissa"
+    />
+    <meta name="author" content="João Sebastião Capindissa">
+    <link href="styles/form.css" rel="stylesheet">
+    <link href="styles/form-large.css" rel="stylesheet">
+
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Sansita"
+      rel="stylesheet"
+    />
+    <title>Product Review</title>
+  </head>
+
+  <body>
+
+      <header>
+        <h1>Product Review</h1>
+      </header>
+
+      <div class="container">
+        <form method="get" action="review.html" class="form">
+          <label>Product Name*<select name="item" id="item" required>
+              <option value="" disabled selected>Select a Product...</option>
+            </select>
+          </label>
+
+          <fieldset>
+            <legend>Overall Rating*</legend>
+            <div class="full-stars">
+                <div class="rating-group">
+                    <input name="fst" id="fst-1" value="1" type="radio" required/> 
+                    <label for="fst-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+                    </label>
+                    
+                    <input name="fst" id="fst-2" value="2" type="radio" required/>
+                    <label for="fst-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+                    </label>
+                    
+                    <input name="fst" id="fst-3" value="3" type="radio" required/>
+                    <label for="fst-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+                    </label>
+                    
+                    <input name="fst" id="fst-4" value="4" type="radio" required/>  
+                    <label for="fst-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+                    </label>
+                    
+                    <input name="fst" id="fst-5" value="5" type="radio" required/>
+                    <label for="fst-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+        
+  
+          <label>Date of Installation*
+            <input id="date" name="date" type="date" required>
+          </label>
+  
+          <fieldset>
+            <legend>Which features did you find useful in the product?
+              <span class="hint"> (Check all that apply)</span></legend>
+            <div class="features" id="usefulProd">
+              <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+              <label><input type="checkbox" id="easy" name="easy" value="yes">Easy of Use</label>
+              <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
+              <label><input type="checkbox" id="design" name="design" value="yes">Design</label>
+            </div>
+          </fieldset>
+  
+  
+          <label>Written Review<span class="hint02"> (Optional)</span><textarea id="review"
+              name="review"></textarea></label>
+  
+          <label>Your Name<span class="hint02"> (Optional)</span><input type="text" id="nameUser" name="nameUser"></label>
+  
+          <input type="submit" value="Post Review">
+        </form>
+    </div>
+      
+      <footer>
+        <p><span id="currentYear"></span> | João Sebastião Capindissa | Angola </p>
+        <p id="lastModified"></p>
+      </footer>
+  </body>
+</html>

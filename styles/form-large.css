@@ -1,0 +1,17 @@
+@media (min-width: 400px) {
+    h1 {
+      font-size: 20px;
+    }
+    header,
+    footer {
+      padding: 20px;
+      max-width: 2000px;
+    }
+    .container {
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
