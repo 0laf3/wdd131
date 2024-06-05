@@ -6,6 +6,9 @@ const main = document.getElementById('main')
 const form = document.getElementById('form')
 const search = document.getElementById('search')
 
+/* menu bar */
+
+
 // Get initial movies
 getMovies(API_URL)
 
@@ -76,3 +79,4 @@ function myFunction() {
         x.style.display = "block";
     }
 }
+

@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Vision</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals -- João Sebastião Capindissa -- Final Project">
     <meta name="author" content="João Sebastião Capindissa">
-    <link rel="stylesheet" href="styles/finalproject.css"/>
-    <link rel="stylesheet" href="styles/temples.css"/>
+    <link rel="stylesheet" href="styles/finalproject.css" />
+    <link rel="stylesheet" href="styles/menu.css" />
+    <link rel="stylesheet" href="styles/meu-large.css" />
+    <script src="scripts/temples.js" defer></script>
 </head>
+
 <body>
     <header>
+
+        <form id="form">
+            <input type="text" id="search" class="search" placeholder="Search">
+        </form>
         <nav>
             <h1>Movie Vision</h1>
             <ul id="menu">
@@ -22,14 +30,19 @@
                 <i class="fa fa-bars"></i>
             </a>
         </nav>
-        <form id="form">
-            <input type="text" id="search" class="search" placeholder="Search">
-        </form>
     </header>
     <main id="main">
-       
+
     </main>
-    
+
     <script src="scripts/finalproject.js"></script>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> João Sebastião Capindissa - Luanda, Angola
+        </p>
+        <p id="lastModified" class="colored"></p>
+    </footer>
 </body>
+
 </html>

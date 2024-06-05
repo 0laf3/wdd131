@@ -107,3 +107,13 @@ main{
 .movie:hover .overview{
     transform: translateY(0);
 }
+
+footer {
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+}
