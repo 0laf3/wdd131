@@ -1,6 +1,3 @@
-function showContent(content) {
-    document.getElementById('selectedContent').textContent = content;
-}
 
 function myFunction() {
     var x = document.getElementById("menu");
