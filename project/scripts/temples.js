@@ -7,6 +7,14 @@ function myFunction() {
       x.style.display = "block";
     }
 }
+function myFunction(menuId) {
+    var menu = document.getElementById(menuId);
+    if (menu.style.display === "flex") {
+        menu.style.display = "none"; // Hide the menu
+    } else {
+        menu.style.display = "flex"; // Show the menu
+    }
+}
 
 document.getElementById('currentyear').textContent = new Date().getFullYear();
 
